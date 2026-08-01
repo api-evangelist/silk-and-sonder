@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+source: https://silkandsonder.com/.well-known/
+host: https://silkandsonder.com
+note: >-
+  silkandsonder.com is a Shopify-hosted storefront (DNS A record 23.227.38.32).
+  The two 200 documents below are Shopify's generic Customer Account OAuth/OIDC
+  discovery surface (issuer https://shopify.com/authentication/25516136), present
+  on every Shopify store rather than a first-party Silk + Sonder developer API.
+  scopes_supported advertises customer-account-api:full and
+  customer-account-mcp-api:full (Shopify Customer Account MCP API). No first-party
+  API, developer portal, or docs/dev subdomain was found.
+documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: silk-and-sonder-openid-configuration.json
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: silk-and-sonder-oauth-authorization-server.json
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
